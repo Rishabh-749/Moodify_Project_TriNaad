@@ -203,4 +203,4 @@ Full Stack Developer focused on scalable and AI-powered web applications.
 
 <div align="center">
 
-### ⭐ Star the repository if you found it v
+### ⭐ Star the repository if you found it valuable
