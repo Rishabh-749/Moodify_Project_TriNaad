@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  color-scheme: dark;
+  --bg-base: #060816;
+  --bg-elevated: #0d1225;
+  --bg-card: rgba(13, 18, 37, 0.86);
+  --line-soft: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --text-main: #f8fafc;
+  --text-soft: #aab3cf;
+  --accent-primary: #a855f7;
+  --accent-secondary: #ff7ac6;
+  --accent-tertiary: #6e8bff;
+  --success: #4ade80;
+  --danger: #fb7185;
+  --shadow-main: 0 24px 80px rgba(0, 0, 0, 0.42);
+  --scroll-track: rgba(255, 255, 255, 0.04);
+  --scroll-thumb: rgba(168, 85, 247, 0.55);
+  --scroll-thumb-hover: rgba(255, 122, 198, 0.72);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(110, 139, 255, 0.12), transparent 24%),
+    radial-gradient(circle at bottom center, rgba(255, 122, 198, 0.08), transparent 30%),
+    var(--bg-base);
+  color: var(--text-main);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+  background: transparent;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, var(--accent-primary), var(--accent-secondary)) padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(180deg, var(--scroll-thumb-hover), var(--accent-primary)) padding-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
