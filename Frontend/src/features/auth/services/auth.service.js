@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080/api/auth",
+    baseURL: import.meta.env.PROD ? "/api/auth" : "http://localhost:8080/api/auth",
     withCredentials: true
 })
 
@@ -32,4 +32,3 @@ export const logout = async ()=>{
     const response = await api.get("/logout")    
     return response.data
 }
-
