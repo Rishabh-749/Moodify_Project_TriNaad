@@ -47,11 +47,13 @@ Admin users can upload songs directly from the navbar profile section.
 ### Demo Admin Credentials
 
 ```env
+USERNAME: Mahadev
 EMAIL: mahadev@gmail.com
 PASSWORD: SadaShiv@1234
 ```
 
 ```env
+USERNAME: Rishabh
 EMAIL: rishabh@gmail.com
 PASSWORD: Rishi@1234
 ```
